@@ -1,0 +1,115 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+}
+
+.container {
+  text-align: center;
+  padding: 10px;
+}
+
+.container img {
+  width: 260px;
+  border-radius: 25px;
+  height: auto;
+}
+
+.container h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+/* From Uiverse.io by Allyhere */
+#allowAccess {
+  --clr-font-main: hsla(0 0% 20% / 100);
+  --btn-bg-1: hsla(194 100% 69% / 1);
+  --btn-bg-2: hsla(217 100% 56% / 1);
+  --btn-bg-color: hsla(360 100% 100% / 1);
+  --radii: 0.5em;
+  cursor: pointer;
+  padding: 0.9em 1.4em;
+  margin-top: 25px;
+  min-width: 320px;
+  min-height: 104px;
+  font-size: var(--size, 1.5rem);
+  font-weight: 500;
+  transition: 0.8s;
+  background-size: 280% auto;
+  background-image: linear-gradient(
+    325deg,
+    var(--btn-bg-2) 0%,
+    var(--btn-bg-1) 55%,
+    var(--btn-bg-2) 90%
+  );
+  border: none;
+  border-radius: var(--radii);
+  color: var(--btn-bg-color);
+  box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5),
+    0px 5px 5px -1px rgba(58, 125, 233, 0.25),
+    inset 4px 4px 8px rgba(175, 230, 255, 0.5),
+    inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+}
+
+#allowAccess:hover {
+  background-position: right top;
+}
+
+#video,
+#canvas {
+  display: none;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 600px;
+}
+
+.red-text {
+  color: red; /* Red color */
+  font-size: 1rem; /* Very large font size */
+  font-weight: bold; /* Bold text */
+  text-transform: uppercase; /* All caps */
+  letter-spacing: 0.1em; /* Slightly larger spacing between letters */
+  animation: shake 0.2s infinite; /* Adds shaking effect */
+  text-shadow: 2px 2px 8px rgba(255, 0, 0, 0.5); /* Red glow */
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
